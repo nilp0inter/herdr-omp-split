@@ -28,7 +28,13 @@ it follows a per-terminal breadcrumb and would resolve to the wrong session.
 ## Install
 
 ```sh
-herdr plugin link /path/to/herdr-split
+herdr plugin install nilp0inter/herdr-omp-split
+```
+
+Or link the local checkout while developing:
+
+```sh
+herdr plugin link /path/to/herdr-omp-split
 ```
 
 The plugin registers one action, `split` ("Split session"). Trigger it from a
