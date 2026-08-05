@@ -1,0 +1,14 @@
+id = "split"
+name = "Split"
+version = "0.1.0"
+min_herdr_version = "0.7.0"
+description = "Fork the current omp session and open the original conversation in a new tab."
+platforms = ["macos", "linux"]
+
+[[build]]
+command = ["bun", "install", "--frozen-lockfile"]
+
+[[actions]]
+id = "split"
+title = "Split session"
+command = ["bun", "run", "src/split/open-split.ts"]
